@@ -1,6 +1,6 @@
 {
   "name": "qm-hub-websocket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WebSocket module - Node-red",
   "main": "web-socket.js",
   "scripts": {
@@ -17,6 +17,9 @@
     "url": "https://github.com/modulesQuimera/qm-hub-websocket/issues"
   },
   "homepage": "https://github.com/modulesQuimera/qm-hub-websocket#readme",
+  "dependencies": {
+    "ws": "^7.3.0"
+  },
   "node-red": {
     "nodes": {
       "jig-web-socket": "web-socket.js"
