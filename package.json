@@ -1,0 +1,25 @@
+{
+  "name": "qm-hub-websocket",
+  "version": "1.0.0",
+  "description": "WebSocket module - Node-red",
+  "main": "web-socket.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modulesQuimera/qm-hub-websocket.git"
+  },
+  "keywords": ["quimera", "hub", "JIG"],
+  "author": "HUB-LSE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modulesQuimera/qm-hub-websocket/issues"
+  },
+  "homepage": "https://github.com/modulesQuimera/qm-hub-websocket#readme",
+  "node-red": {
+    "nodes": {
+      "jig-web-socket": "web-socket.js"
+    }
+  }
+}
