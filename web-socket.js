@@ -71,11 +71,9 @@ module.exports = function(RED) {
                         },
                     ],
                     "tester": "",
-                    "model": "",
-                    "station":""
+                    "model": ""
                 }
                 globalContext.set("exportFile", exportFile)
-                console.log(node.endPoint)
                 sendMessage(file, send, node.endPoint)
                 // send(msg)
             }
