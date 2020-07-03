@@ -18,22 +18,22 @@
 </script>
 
 <script type="text/html" data-help-name="jig-web-socket">
-    <p>working on it...</p>
+    <p>Get the test file including tests for all slots and send it to JIG via Websocket.</p>
 </script>
 
 <script type="text/javascript">
     RED.nodes.registerType('jig-web-socket',{
-        category: 'WebSocket',
+        category: 'JIG Configuration',
         color: '#F0E68C',
         defaults: {
             name: {value:""},
             port: {value:"", required: true},
             url: {value:"", required: true},
         },
-        label: function() { return this.name || "Websocket" },
+        label: function() { return this.name || "Send to JIG" },
         inputs:1,
         outputs:1,
-        icon: "./icons/Web Socket.svg",
-        paletteLabel: "Websocket",
+        icon: "./icons/Web_Socket.svg",
+        paletteLabel: "Send to JIG",
     });
 </script>
