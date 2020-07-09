@@ -51,29 +51,29 @@ module.exports = function(RED) {
                 var file = globalContext.get("exportFile")
                 // var slot = globalContext.get("slot");
                 // console.log(file.slots[slot].jig_test)
-                var exportFile = {
-                    "slots": [
-                        {
-                            "jig_test": [],
-                            "jig_error": []
-                        },
-                        {
-                            "jig_test": [],
-                            "jig_error": []
-                        },
-                        {
-                            "jig_test": [],
-                            "jig_error": []
-                        },
-                        {
-                            "jig_test": [],
-                            "jig_error": []
-                        },
-                    ],
-                    "tester": "",
-                    "model": ""
-                }
-                globalContext.set("exportFile", exportFile)
+                // var exportFile = {
+                //     "slots": [
+                //         {
+                //             "jig_test": [],
+                //             "jig_error": []
+                //         },
+                //         {
+                //             "jig_test": [],
+                //             "jig_error": []
+                //         },
+                //         {
+                //             "jig_test": [],
+                //             "jig_error": []
+                //         },
+                //         {
+                //             "jig_test": [],
+                //             "jig_error": []
+                //         },
+                //     ],
+                //     "tester": "",
+                //     "model": ""
+                // }
+                // globalContext.set("exportFile", exportFile)
                 sendMessage(file, send, node.endPoint)
                 // send(msg)
             }

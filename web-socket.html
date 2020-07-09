@@ -2,18 +2,18 @@
     <h2 style="text-align: center;">WebSocket configuration</h2>
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
-        <input type="text" id="node-input-name" style="margin-left:-150px">
+        <input type="text" id="node-input-name">
     </div>
     <br>
     <div class="form-row">
         <label for="node-input-url"><i class="fa fa-external-link"></i> Url</label>
-        <input type="text" id="node-input-url" style="width:43%; margin-left:-150px" placeholder="ws://localhost">
+        <input type="text" id="node-input-url" style="width:43%;" placeholder="ws://localhost">
         <!-- <label style="margin-left:15px;" for="node-input-port"><i class="fa fa-microchip"></i> Port</label>
         <input type="number" id="node-input-port" style="width:13%; margin-left:-50px"> -->
     </div>
     <div class="form-row">
         <label for="node-input-port"><i class="fa fa-microchip"></i> Port</label>
-        <input type="number" id="node-input-port" style="width:13%; margin-left:-150px">
+        <input type="number" id="node-input-port" style="width:13%;">
     </div>
 </script>
 
@@ -33,7 +33,7 @@
         label: function() { return this.name || "Send to JIG" },
         inputs:1,
         outputs:1,
-        icon: "./icons/Web_Socket.svg",
+        icon: "Web_Socket.svg",
         paletteLabel: "Send to JIG",
     });
 </script>

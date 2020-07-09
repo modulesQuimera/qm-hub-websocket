@@ -1,6 +1,6 @@
 {
   "name": "qm-hub-websocket",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "WebSocket module - Node-red",
   "main": "web-socket.js",
   "scripts": {
