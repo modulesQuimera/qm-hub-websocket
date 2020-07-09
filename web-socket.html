@@ -1,19 +1,64 @@
+<style>
+
+    label{
+        width: 50% !important;
+        margin-bottom: 2px !important;
+    }
+
+    .columm{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    hr {
+    width: 40% !important;
+    float: left !important;
+    }
+
+    .hr-div-socket{
+        display: flex !important;
+        justify-content: space-between !important;
+        margin-top: 400px !important;
+    }
+
+    .optional{
+        height: max-content !important;
+        margin-top: 10px !important;
+    }
+
+    .descript{
+        text-align: center;
+    }
+
+</style>
+
 <script type="text/html" data-template-name="jig-web-socket">
     <h2 style="text-align: center;">WebSocket configuration</h2>
-    <div class="form-row">
+    <!-- <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name">
     </div>
-    <br>
-    <div class="form-row">
+    <br> -->
+    <div class="form-row columm">
         <label for="node-input-url"><i class="fa fa-external-link"></i> Url</label>
-        <input type="text" id="node-input-url" style="width:43%;" placeholder="ws://localhost">
+        <input type="text" id="node-input-url" style="width:50%;" placeholder="ws://localhost">
         <!-- <label style="margin-left:15px;" for="node-input-port"><i class="fa fa-microchip"></i> Port</label>
         <input type="number" id="node-input-port" style="width:13%; margin-left:-50px"> -->
     </div>
-    <div class="form-row">
+    <div class="form-row columm">
         <label for="node-input-port"><i class="fa fa-microchip"></i> Port</label>
-        <input type="number" id="node-input-port" style="width:13%;">
+        <input type="number" id="node-input-port" style="width: 20%;">
+    </div>
+
+    <div class="hr-div-socket">
+        <hr>
+        <span class="optional">Optional</span>
+        <hr>
+    </div>
+
+    <div class="form-row columm">
+        <label style="width: 50% !important;" for="node-input-name" ><i class="fa fa-tag"></i> Component Nickname</label>
+        <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
