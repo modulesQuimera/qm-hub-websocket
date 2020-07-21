@@ -45,10 +45,10 @@ module.exports = function(RED) {
 
         node.on('input', function(msg, send, done) {
             var globalContext = node.context().global;
-            var exportMode = globalContext.get("exportMode");
+            // var exportMode = globalContext.get("exportMode");
             
-            if(!exportMode){
-                var file = globalContext.get("exportFile")
+            // if(!exportMode){
+            var file = globalContext.get("exportFile")
                 // var slot = globalContext.get("slot");
                 // console.log(file.slots[slot].jig_test)
                 // var exportFile = {
@@ -74,15 +74,15 @@ module.exports = function(RED) {
                 //     "model": ""
                 // }
                 // globalContext.set("exportFile", exportFile)
-                sendMessage(file, send, node.endPoint)
+            sendMessage(file, send, node.endPoint)
                 // send(msg)
-            }
-            else{
-                msg.payload = {
-                    "error": "Export mode is true"
-                }
-                send(msg)
-            }
+            // }
+            // else{
+                // msg.payload = {
+                    // "error": "Export mode is true"
+                // }
+            send(msg)
+            // }
         });
     }
     RED.nodes.registerType("jig-web-socket", webSocketNode);

@@ -75,7 +75,7 @@
             port: {value:"", required: true},
             url: {value:"", required: true},
         },
-        label: function() { return this.name || "Send to JIG" },
+        label: function() { return this.name? "Send to JIG - " + this.name:"Send to JIG" },
         inputs:1,
         outputs:1,
         icon: "Web_Socket.svg",
