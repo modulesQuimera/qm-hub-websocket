@@ -1,7 +1,7 @@
 <style>
 
     label{
-        width: 50% !important;
+        width: 100% !important;
         margin-bottom: 2px !important;
     }
 
@@ -18,7 +18,7 @@
     .hr-div-socket{
         display: flex !important;
         justify-content: space-between !important;
-        margin-top: 400px !important;
+        /* margin-top: 400px !important; */
     }
 
     .optional{
@@ -30,6 +30,55 @@
         text-align: center;
     }
 
+    .columm{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+
+    .columm-30{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 30% !important;
+        float: left !important;
+    }
+    .columm-50{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 50% !important;
+        float: left !important;
+    }
+
+
+    .columm-70{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 70% !important;
+        float: left !important;
+    }
+
+    .descript-div{
+        max-width: 444px !important;
+    }
+
+    span.red-ui-typedInput-type-label {
+    /* background: chartreuse; */
+    /* display: block; */
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
+
+    .btn-aln{
+        display: flex !important;
+        flex-direction: row-reverse !important;
+        /* padding-left: 30px; */
+        align-content: center;
+        align-items: flex-end;
+    }
+
+
 </style>
 
 <script type="text/html" data-template-name="jig-web-socket">
@@ -39,6 +88,25 @@
         <input type="text" id="node-input-name">
     </div>
     <br> -->
+    <div style=" position: relative; display:flex; margin-top: 20px;">
+        <div class="form-row columm-70">
+            <label style="width: 50% !important;" for="node-input-name" ><i class="fa fa-tag"></i> Identification Note</label>
+            <input type="text" id="node-input-name" placeholder="Name" style="width: 100%">
+        </div>
+        <!-- <div class="form-row columm-30" style="align-items: flex-end !important;">
+            <label style="width: max-content !important; padding-right: 24px;"><i class="fa fa-list-ul"></i> Item</label>
+            <div class="form-row btn-aln" >
+                <a id="addVoltage3" class="red-ui-button" ><i class="fa fa-plus"></i></a>
+                <a id="remVoltage3" class="red-ui-button" style="margin-right: 5px;" ><i class="fa fa-minus"></i></a>
+            </div>
+        </div> -->
+    </div>
+    <div class="hr-div-socket">
+        <hr>
+        <span class="optional">WebSocket</span>
+        <hr>
+    </div>
+
     <div class="form-row columm">
         <label for="node-input-url"><i class="fa fa-external-link"></i> Url</label>
         <input type="text" id="node-input-url" style="width:50%;" placeholder="ws://localhost">
@@ -50,7 +118,7 @@
         <input type="number" id="node-input-port" style="width: 20%;">
     </div>
 
-    <div class="hr-div-socket">
+    <!-- <div class="hr-div-socket">
         <hr>
         <span class="optional">Optional</span>
         <hr>
@@ -59,7 +127,7 @@
     <div class="form-row columm">
         <label style="width: 50% !important;" for="node-input-name" ><i class="fa fa-tag"></i> Component Nickname</label>
         <input type="text" id="node-input-name" placeholder="Name">
-    </div>
+    </div> -->
 </script>
 
 <script type="text/html" data-help-name="jig-web-socket">
